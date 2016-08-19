@@ -6,6 +6,7 @@ import (
 
 	"github.com/TechResearchID/go-in-action/array"
 	"github.com/TechResearchID/go-in-action/math"
+	"github.com/TechResearchID/go-in-action/slice"
 )
 
 func init() {
@@ -27,4 +28,8 @@ func main() {
 	array.AssigningArray()
 	array.AssigningArrayPointer()
 	array.TwoDimentionalArray()
+
+	slice.MakeSlice()
+	slice.MakeWithLiteral()
+	slice.EmptySlice()
 }
