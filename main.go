@@ -42,4 +42,5 @@ func main() {
 	slice.IteratingSlice()
 	slice.IteratingSliceIsCopy()
 	slice.CreateMultidimentionSlice()
+	slice.PassingSliceToFunction()
 }
