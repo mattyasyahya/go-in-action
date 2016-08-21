@@ -8,6 +8,7 @@ import (
 	"github.com/TechResearchID/go-in-action/maps"
 	"github.com/TechResearchID/go-in-action/math"
 	"github.com/TechResearchID/go-in-action/slice"
+	"github.com/TechResearchID/go-in-action/types"
 )
 
 func init() {
@@ -52,4 +53,10 @@ func main() {
 	maps.IteratingMap()
 	maps.RemoveItemInMap()
 	maps.PassingMap()
+
+	types.CreateUser()
+	types.Method()
+	types.SendNotification()
+	types.ImplementByPointer()
+	types.SampleEmbed()
 }
