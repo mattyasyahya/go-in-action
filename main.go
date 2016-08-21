@@ -5,6 +5,7 @@ import (
 	"os"
 
 	"github.com/TechResearchID/go-in-action/array"
+	"github.com/TechResearchID/go-in-action/maps"
 	"github.com/TechResearchID/go-in-action/math"
 	"github.com/TechResearchID/go-in-action/slice"
 )
@@ -43,4 +44,12 @@ func main() {
 	slice.IteratingSliceIsCopy()
 	slice.CreateMultidimentionSlice()
 	slice.PassingSliceToFunction()
+
+	maps.CreateEmptyMap()
+	maps.InitializeMap()
+	maps.MapOfSlice()
+	maps.RetrieveValue()
+	maps.IteratingMap()
+	maps.RemoveItemInMap()
+	maps.PassingMap()
 }
