@@ -63,4 +63,6 @@ func main() {
 
 	concurrency.GetCPUCoreNum()
 	concurrency.OneLogical()
+	concurrency.TimeSlice()
+	concurrency.RaceCondition()
 }
