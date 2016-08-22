@@ -65,4 +65,6 @@ func main() {
 	concurrency.OneLogical()
 	concurrency.TimeSlice()
 	concurrency.RaceCondition()
+	concurrency.SafeRaceCondition()
+	concurrency.AtomicLoadAndStore()
 }
