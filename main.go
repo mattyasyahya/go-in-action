@@ -6,6 +6,7 @@ import (
 
 	"github.com/TechResearchID/go-in-action/array"
 	"github.com/TechResearchID/go-in-action/concurrency"
+	"github.com/TechResearchID/go-in-action/concurrency/runner"
 	"github.com/TechResearchID/go-in-action/maps"
 	"github.com/TechResearchID/go-in-action/math"
 	"github.com/TechResearchID/go-in-action/slice"
@@ -72,4 +73,6 @@ func main() {
 	concurrency.TennisGame()
 	concurrency.RunnerGame()
 	concurrency.DistributeWorker()
+
+	runner.Main()
 }
