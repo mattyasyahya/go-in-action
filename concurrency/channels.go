@@ -103,3 +103,47 @@ func RunnerGame() {
 
 	wg.Wait()
 }
+
+const (
+	numberOfGoroutines = 4
+	taskLoad           = 10
+)
+
+func worker(task chan string, worker int) {
+	defer wg.Done()
+
+	for {
+		task, ok := <-task
+		if !ok {
+			fmt.Println("Worker", worker, "Shutting Down")
+			return
+		}
+
+		fmt.Println("Worker", worker, ": Started", task)
+
+		sleep := rand.Int63n(100)
+		time.Sleep(time.Duration(sleep) * time.Millisecond)
+
+		fmt.Println("Worker", worker, ": Completed", task)
+	}
+}
+
+// DistributeWorker sample distribution worker with channel
+func DistributeWorker() {
+	rand.Seed(time.Now().Unix())
+
+	tasks := make(chan string, taskLoad)
+
+	wg.Add(numberOfGoroutines)
+	for gr := 1; gr <= numberOfGoroutines; gr++ {
+		go worker(tasks, gr)
+	}
+
+	for post := 1; post <= taskLoad; post++ {
+		tasks <- fmt.Sprintf("Task : %d", post)
+	}
+
+	close(tasks)
+
+	wg.Wait()
+}

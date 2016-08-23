@@ -71,4 +71,5 @@ func main() {
 	concurrency.CreateChannel()
 	concurrency.TennisGame()
 	concurrency.RunnerGame()
+	concurrency.DistributeWorker()
 }
