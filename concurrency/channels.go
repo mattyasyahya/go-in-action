@@ -61,6 +61,45 @@ func player(name string, court chan int) {
 		fmt.Println("Player", name, "Hit", ball)
 		ball++
 
+		time.Sleep(250 * time.Millisecond)
+
 		court <- ball
 	}
+}
+
+// Runner runner game implementation
+func Runner(baton chan int) {
+	var newRunner int
+	runner := <-baton
+	fmt.Println("Runner", runner, "Running with Baton")
+
+	if runner != 4 {
+		newRunner = runner + 1
+		fmt.Println("Runner", newRunner, "To the Line")
+		go Runner(baton)
+	}
+
+	time.Sleep(100 * time.Millisecond)
+
+	if runner == 4 {
+		fmt.Println("Runner", runner, "Finished, Rake Over")
+		wg.Done()
+		return
+	}
+
+	fmt.Println("Runner", runner, "Exchanged With Runner", newRunner)
+
+	baton <- newRunner
+}
+
+// RunnerGame simulate runner game with channel
+func RunnerGame() {
+	wg.Add(1)
+	baton := make(chan int)
+
+	go Runner(baton)
+
+	baton <- 1
+
+	wg.Wait()
 }

@@ -70,4 +70,5 @@ func main() {
 	concurrency.MutexRaceCondition()
 	concurrency.CreateChannel()
 	concurrency.TennisGame()
+	concurrency.RunnerGame()
 }
