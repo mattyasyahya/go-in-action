@@ -69,4 +69,5 @@ func main() {
 	concurrency.AtomicLoadAndStore()
 	concurrency.MutexRaceCondition()
 	concurrency.CreateChannel()
+	concurrency.TennisGame()
 }
