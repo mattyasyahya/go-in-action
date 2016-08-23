@@ -68,4 +68,5 @@ func main() {
 	concurrency.SafeRaceCondition()
 	concurrency.AtomicLoadAndStore()
 	concurrency.MutexRaceCondition()
+	concurrency.CreateChannel()
 }
