@@ -85,5 +85,6 @@ func main() {
 	work.Main()
 	// runner.Main()
 
-	loglib.Main()
+	// loglib.Main()
+	loglib.CustomeLogger()
 }
