@@ -1,0 +1,40 @@
+{
+   "results" : [
+      {
+         "formatted_address" : "Bandung, Kota Bandung, Jawa Barat, Indonesia",
+         "geometry" : {
+            "location" : {
+               "lat" : -6.917463899999999,
+               "lng" : 107.6191228
+            },
+            "viewport" : {
+               "northeast" : {
+                  "lat" : -6.8392781,
+                  "lng" : 107.738714
+               },
+               "southwest" : {
+                  "lat" : -6.967620999999999,
+                  "lng" : 107.5476009
+               }
+            }
+         },
+         "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/geocode-71.png",
+         "id" : "0a632d8a6fe8f5990eda1d3b5d26879793c0a544",
+         "name" : "Bandung",
+         "photos" : [
+            {
+               "height" : 2848,
+               "html_attributions" : [
+                  "\u003ca href=\"https://maps.google.com/maps/contrib/106193943270968062042/photos\"\u003eDarmiyati Waskito\u003c/a\u003e"
+               ],
+               "photo_reference" : "CoQBcwAAAB4V6ZRHcM7Hcjpt2TM_16C0PeACwjg_8qw-r8vZibsGaLSChDl1nDMI3MkdCyu4KbMXgQW3ZrD10qfi46iUKanWus0W0vROjV2aCwPxDIsKb-nUWlxvhmOz0y61_0ewnhEKL5MDNujkc5gF_k3hpAdldrVj0ro-_9AOrEbIdEkEEhBGIu3TOT6RM2Ej5XnwOAzoGhThhzxngompV1YQJpgzBTZA8npTaQ",
+               "width" : 4288
+            }
+         ],
+         "place_id" : "ChIJf0dSgjnmaC4RshXo05MfahQ",
+         "reference" : "CpQBigAAAKdmvTgC-EhgfJ9aYcOtySLziHUssWpZ3Hl5JhpC_S0lRYe4KhpznsAZUEO5tDN9BuctYTs05gwTjNJDE0TgjU1HzXTvm0N8y4xRTP9mPfvBk5UsYhy-SKwijfgggzBB-XWRJN-oKqCJyW013Ncg_ZFCLi3qqvpZu6KeXIIWYIL9mZuVirQxzxmVPpcgBHViaRIQ1_EFr6i-g047LhZ9_43DixoU-_u7aDdJVu6Z_BtXic4eOjze5D4",
+         "types" : [ "locality", "political" ]
+      }
+   ],
+   "status" : "OK"
+}

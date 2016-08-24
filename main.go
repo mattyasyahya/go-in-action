@@ -9,6 +9,7 @@ import (
 	"github.com/TechResearchID/go-in-action/concurrency/pool"
 	"github.com/TechResearchID/go-in-action/concurrency/work"
 	"github.com/TechResearchID/go-in-action/libs/execute"
+	"github.com/TechResearchID/go-in-action/libs/jsons"
 	"github.com/TechResearchID/go-in-action/libs/loglib"
 	"github.com/TechResearchID/go-in-action/maps"
 	"github.com/TechResearchID/go-in-action/math"
@@ -87,4 +88,6 @@ func main() {
 
 	// loglib.Main()
 	loglib.CustomeLogger()
+
+	jsons.GoogleMapsPlaceSearch()
 }
