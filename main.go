@@ -9,6 +9,7 @@ import (
 	"github.com/TechResearchID/go-in-action/concurrency/pool"
 	"github.com/TechResearchID/go-in-action/concurrency/work"
 	"github.com/TechResearchID/go-in-action/libs/execute"
+	"github.com/TechResearchID/go-in-action/libs/loglib"
 	"github.com/TechResearchID/go-in-action/maps"
 	"github.com/TechResearchID/go-in-action/math"
 	"github.com/TechResearchID/go-in-action/slice"
@@ -16,6 +17,8 @@ import (
 )
 
 func init() {
+	log.SetPrefix("TRACE: ")
+	log.SetFlags(log.Ldate | log.Lmicroseconds | log.Llongfile)
 	log.Println("Init program")
 	log.SetOutput(os.Stdout)
 }
@@ -82,4 +85,5 @@ func main() {
 	work.Main()
 	// runner.Main()
 
+	loglib.Main()
 }
