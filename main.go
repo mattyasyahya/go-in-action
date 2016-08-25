@@ -9,6 +9,7 @@ import (
 	"github.com/TechResearchID/go-in-action/concurrency/pool"
 	"github.com/TechResearchID/go-in-action/concurrency/work"
 	"github.com/TechResearchID/go-in-action/libs/execute"
+	"github.com/TechResearchID/go-in-action/libs/ios"
 	"github.com/TechResearchID/go-in-action/libs/jsons"
 	"github.com/TechResearchID/go-in-action/libs/loglib"
 	"github.com/TechResearchID/go-in-action/maps"
@@ -95,4 +96,7 @@ func main() {
 	jsons.PrettyEncoding()
 	jsons.UglyEncoding()
 	jsons.StructEncoding()
+
+	ios.Simple()
+	ios.Curl()
 }
