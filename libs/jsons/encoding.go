@@ -43,3 +43,26 @@ func UglyEncoding() {
 
 	fmt.Println(string(data))
 }
+
+// Person type
+type Person struct {
+	FirstName string `json:"first_name"`
+	LastName  string `json:"last_name"`
+}
+
+// StructEncoding encode struct data to json
+func StructEncoding() {
+	p := Person{
+		FirstName: "Eko Kurniawan",
+		LastName:  "Khannedy",
+	}
+
+	data, err := json.Marshal(p)
+	if err != nil {
+		log.Println(err)
+		return
+	}
+
+	fmt.Println(string(data))
+
+}

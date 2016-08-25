@@ -94,4 +94,5 @@ func main() {
 	jsons.UnmarshalMap()
 	jsons.PrettyEncoding()
 	jsons.UglyEncoding()
+	jsons.StructEncoding()
 }
