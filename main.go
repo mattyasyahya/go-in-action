@@ -91,4 +91,5 @@ func main() {
 
 	jsons.GoogleMapsPlaceSearch()
 	jsons.ContactJSON()
+	jsons.UnmarshalMap()
 }
