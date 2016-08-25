@@ -90,4 +90,5 @@ func main() {
 	loglib.CustomeLogger()
 
 	jsons.GoogleMapsPlaceSearch()
+	jsons.ContactJSON()
 }
