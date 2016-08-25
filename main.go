@@ -81,8 +81,6 @@ func main() {
 	concurrency.RunnerGame()
 	concurrency.DistributeWorker()
 
-	execute.RunJavaVersion()
-
 	pool.Main()
 	work.Main()
 	// runner.Main()
@@ -99,4 +97,6 @@ func main() {
 
 	ios.Simple()
 	ios.Curl()
+
+	execute.RunJavaVersion()
 }

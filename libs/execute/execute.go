@@ -25,7 +25,9 @@ func RunJavaVersion() {
 	scanner := bufio.NewScanner(cmdReader)
 	go func() {
 		for scanner.Scan() {
+			fmt.Println("=============")
 			fmt.Println(scanner.Text())
+			fmt.Println("=============")
 		}
 	}()
 
